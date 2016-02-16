@@ -1,0 +1,68 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/********* Main Page styles **********/
+.container {	
+	font-family: Arial, Helvetica, sans-serif;
+	width: 95%;
+}
+
+.food-box {
+	border: 1px solid black;
+	background: #EEEEFF;
+	float: left;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	
+}
+
+.food-box > h2 {
+	background : #FFFFEE;
+	color: #AA1111;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0.7;
+	height: 25px;
+}
+
+.food-box > img {
+	margin: auto;
+
+		
+}
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+	.food-box {
+		width: 30%;
+		
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.food-box {
+		width: 45%;
+	}
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+	.food-box {
+		width: 90%;	
+	}
+}

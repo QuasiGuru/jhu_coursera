@@ -8,61 +8,88 @@
 h1 {
   margin-bottom: 25px;
   text-align: center;
+  padding-top: 10px;
 }
 
 /********* Main Page styles **********/
 .container {	
 	font-family: Arial, Helvetica, sans-serif;
-	width: 95%;
+	width: 100%;
+	padding-top: 20px;
 }
 
-.food-box {
+.row {
+	width: 100%;
+	margin-left: 40px;
+	margin-right: 0;
+}
+
+#box1, #box2, #box3 {
 	border: 1px solid black;
-	background: #EEEEFF;
-	float: left;
-	margin-left: 15px;
-	margin-bottom: 20px;
+	background: #DDDDDD;	
+	position: relative;
+	padding-top: 45px;
 	padding-left: 15px;
 	padding-right: 15px;
-	position: relative;
-	
+	padding-bottom: 5px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
-.food-box > h2 {
-	background : #FFFFEE;
-	color: #AA1111;
+h2 {
 	text-align: center;
-	width: 100%;
+	width: 140px;
 	position: absolute;
 	top: 0px;
-	left: 0px;
-	opacity: 0.7;
-	height: 25px;
+	right: 0px;
+	height: 40px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
-.food-box > img {
-	margin: auto;
+#box1 h2 {
+	background: #FF9999;
+	color: black;
+}
 
-		
+#box2 h2 {
+	background: #DD3434;
+	color: white;
+}
+
+#box3 h2 {
+	background: #DEDE77;
+	color: black;
 }
 
 /********** Desktop devices only **********/
 @media (min-width: 992px) {
-	.food-box {
+	#box1, #box2, #box3 {
 		width: 30%;
-		
+		float: left;
+	}
 }
 
 /********** Tablet devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-	.food-box {
-		width: 45%;
+	#box1, #box2 {
+		width: 44%;
+		float: left;
+	}
+	
+	#box3 {
+		width: 90%;
+		clear: left;
 	}
 }
 
 /********** Mobile devices only **********/
 @media (max-width: 767px) {
-	.food-box {
-		width: 90%;	
+	#box1, #box2, #box3 {
+		width: 90%;
 	}
 }

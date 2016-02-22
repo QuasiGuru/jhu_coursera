@@ -1,0 +1,15 @@
+.food-box {
+	border: 1px solid black;
+	color: black;
+	background: silver;
+	margin: 0px 15px 15px 15px;
+	padding: 5px 15px 5px 15px;
+	height: 1000px;
+}
+
+
+.nav > li {
+	border-bottom: 1px solid white;
+	color: white;
+	background-color: #272727;
+}
